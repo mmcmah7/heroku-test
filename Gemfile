@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.3.3'
 
-gem 'fog-aws'
+gem 'fog-aws', group: :production
 gem 'figaro'
 gem 'carrierwave'
 gem 'faker'

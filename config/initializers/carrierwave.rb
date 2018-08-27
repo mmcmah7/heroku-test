@@ -6,7 +6,7 @@ CarrierWave.configure do |config|
 		region: "#{ENV['S3_REGION']}",
 		path_style: true
 	}
-	config.fog_provider = 'fog/aws'
+	
 
 	config.fog_directory = "#{ENV['S3_BUCKET_NAME']}"
 	config.cache_dir = "#{Rails.root}/tmp/uploads"
